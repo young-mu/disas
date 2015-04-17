@@ -1,3 +1,4 @@
+/* Do *NOT* edit this file */
 #include <stdio.h>
 
 void x86_stub(void)
