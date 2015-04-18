@@ -6,7 +6,10 @@
 
 int main(int argc, const char *argv[])
 {
-    char code[] = {0x55, 0x89, 0xe5, 0x5d, 0xc3};
+    /* i386 */
+//    char code[] = {0x55, 0x89, 0xe5, 0x5d, 0xc3};
+    /* x86_64 */
+    char code[] = {0x55, 0x48, 0x89, 0xe5, 0x5d, 0xc3};
 
     int fd;
     fd = open("./bin", O_RDWR | O_CREAT, 0666);
