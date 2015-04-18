@@ -5,5 +5,6 @@ arm and x86 disassembler
 * arm support
 * x86_64 support
 
-**Usage:**
-* ./x86_disas genbin/bin
+**Usage examples:**
+* ./x86_disas f genbin/bin
+* ./x86_disas 5589c5
