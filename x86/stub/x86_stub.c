@@ -8,6 +8,8 @@ void x86_stub(void)
     asm("nop\n\t");
     asm("nop\n\t");
     asm("nop\n\t");
+    asm("nop\n\t");
+    asm("nop\n\t");
 }
 
 int main(int argc, const char *argv[])

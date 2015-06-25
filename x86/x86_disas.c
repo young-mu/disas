@@ -9,8 +9,8 @@ typedef enum _Arch {
     i386 = 0, x86_64
 } Arch;
 
-#define X86_STUB_OFFSET_i386        (0x3e0+0x3)
-#define X86_STUB_OFFSET_x86_64      (0x4d0+0x4)
+#define X86_STUB_OFFSET_i386        (0x3ed+0x3)
+#define X86_STUB_OFFSET_x86_64      (0x4ed+0x4)
 
 void printUsage(void)
 {
@@ -148,12 +148,12 @@ int main(int argc, const char *argv[])
         system("objdump -d x86_stub \
                | sed -n '/<x86_stub>:/,/<main>:/{/<x86_stub>:/n; /^$/b; /<main>:/d; s/^ /0x/g; p}' \
                | sed -n '3,$p' | head -n -2 \
-               | awk --non-decimal-data 'BEGIN {FS=\":\"} {$1 = $1 - 0x80483e3; print $0}'");
+               | awk --non-decimal-data 'BEGIN {FS=\":\"} {$1 = $1 - 0x80483f0; print $0}'");
     } else if (arch == x86_64) {
         system("objdump -d x86_stub \
                | sed -n '/<x86_stub>:/,/<main>:/{/<x86_stub>:/n; /^$/b; /<main>:/d; s/^  /0x/g; p}' \
                | sed -n '3,$p' | head -n -2 \
-               | awk --non-decimal-data 'BEGIN {FS=\":\"} {$1 = $1 - 0x4004d4; print $0}'");
+               | awk --non-decimal-data 'BEGIN {FS=\":\"} {$1 = $1 - 0x4004f1; print $0}'");
     }
 
     return 0;
