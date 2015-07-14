@@ -4,6 +4,9 @@ arm and x86 disassembler
 **Features:**
 * support i386 and x86_64 disasembler
 
+**Constrains:**
+* for x86, you must switch gcc version to 4.8
+
 **TODO list:**
 * arm support
 
