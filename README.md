@@ -1,15 +1,13 @@
 # disas
-arm and x86 disassembler
+binary code disassembler
 
 **Features:**
-* support i386 and x86_64 disasembler
+* turn binary code into assembly, support armv7/armv8 and i386/x86_64 now, will support mips/mips64 in the future
 
 **Constrains:**
-* for x86, you must switch gcc version to 4.8
+* you need to use gcc version to 4.8
 
 **TODO list:**
-* arm support
-
-**Usage examples:**
-* ./x86_disas f genbin/bin \[x86_64|64\]
-* ./x86_disas 5589e5 \[i386|32\]
+* add mips version
+* merge arm, mips and x86
+* use android-ndk 
