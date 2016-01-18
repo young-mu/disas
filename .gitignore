@@ -1,0 +1,6 @@
+disas
+disas.o
+Disassembler.o
+stub/stub
+binfile/bin
+binfile/a.out

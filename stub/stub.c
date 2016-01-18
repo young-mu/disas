@@ -1,14 +1,14 @@
 /* Do *NOT* edit this file */
 #include <stdio.h>
 
-void arm_stub(void)
+void stub_func(void)
 {
     /* insertion point */
-    asm("nop\n\t");
+    asm("ssnop\n\t");
 }
 
 int main(int argc, const char *argv[])
 {
-    arm_stub();
+    stub_func();
     return 0;
 }
