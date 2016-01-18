@@ -12,11 +12,11 @@ The principle is very simple:
 This project is based on Android NDK (compiler/binutils), so before using it, you should set NDK root directory in NDK.env first.
 
 The input can be a **binfile** (dumped from gdb, etc.) or **codes**.  
-Here is some examples:
+Here are some examples:
 <pre><code>
 \# ./disas --code 5589e5 --arch i386
 0   55          push   %ebp
-1   89 e5       mov    %esp, %ebp
+1   89 e5       mov    %esp, %ebp  
 \# ./disas --code 554889e5 --arch x86_64
 0   55          push   %rbp
 1   48 89 e5    mov    %rsp, %rbp
