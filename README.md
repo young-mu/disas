@@ -1,7 +1,8 @@
 # disas
 This is a **diassembler** that **turns binary code into assembly**, which supports architectures of i386/x86_64, armv7/armv8 and mips/mips64.
 
-The principle is very simple:  
+The principle is very simple:
+
 1. generate source stub with fixed-number inline-assembly nop instructions as place-holder
 2. compile source stub into exec stub
 3. patch the codes into place-holder of exec stub
