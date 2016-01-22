@@ -12,6 +12,11 @@ if [ -z ${NDKROOT} ]; then
     exit 1
 fi
 
+if [ ! -d ${NDKROOT} ]; then
+    echo "${NDKROOT} does not exsit"
+    exit 1
+fi
+
 ARCH=${1}
 case $ARCH in
     "i386")
